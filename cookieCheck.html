@@ -1,7 +1,6 @@
 <body>
     <script>
         (function () {
-            document.cookie = "username=JohnDoe; max-age=3600; path=/; secure; samesite=lax";
             console.log("window.parent",window.parent);
             if (!window.parent) return;
             var msg = /s=1/.test(document.cookie)
