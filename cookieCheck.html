@@ -1,12 +1,10 @@
 <body>
     <script>
         (function () {
-            console.log("window.parent",window.parent);
             if (!window.parent) return;
             var msg = /s=1/.test(document.cookie)
                 ? "3pcSupported"
                 : "3pcUnsupported";
-            console.log("messsage",msg);
             window.parent.postMessage(msg, "*");
         })();
     </script>
